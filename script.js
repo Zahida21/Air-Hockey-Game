@@ -247,7 +247,7 @@ const GOAL_Y1 = CY - GOAL_W / 2,
     GOAL_Y2 = CY + GOAL_W / 2;
 const PUCK_R = 14;
 const MALLET_R = 24;
-const MAX_SCORE = 5;
+const MAX_SCORE = 7;
 const FRICTION = 0.995;
 const WALL_BOUNCE = 0.82;
 
@@ -517,7 +517,7 @@ function goalScored(who) {
                 : "0 0 30px #ff2d55, 0 0 60px rgba(255,45,85,0.4)";
             goWinsEl.textContent = playerWon
                 ? "GAME · SET · MATCH"
-                : "BETTER LUCK NEXT TIME Fathima!";
+                : "BETTER LUCK NEXT TIME";
             document.getElementById("go-face").textContent = playerWon ? "😄" : "😢";
             goFinal.textContent = `${score.p} – ${score.cpu}`;
             gameoverEl.classList.remove("lose-state");
